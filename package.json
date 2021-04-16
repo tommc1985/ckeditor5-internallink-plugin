@@ -9,11 +9,11 @@
     "ckeditor5-feature"
   ],
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "^11.0.1",
-    "@ckeditor/ckeditor5-engine": "^11.0.0",
-    "@ckeditor/ckeditor5-ui": "^11.1.0",
-    "awesomplete": "^1.1.2",
-    "axios": "^0.18.0"
+    "@ckeditor/ckeditor5-core": "^27.0.0",
+    "@ckeditor/ckeditor5-engine": "^27.0.0",
+    "@ckeditor/ckeditor5-ui": "^27.0.0",
+    "awesomplete": "^1.1.5",
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-editor-classic": "^11.0.1",
