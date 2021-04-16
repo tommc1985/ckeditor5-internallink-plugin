@@ -7,7 +7,7 @@ The referencable items are found by an autocomplete input.
 ## Overview
 This plugin has the same features as the default link plugin except that it does not create regular link tags.
 
-![alt text](https://raw.githubusercontent.com/SamhammerAG/ckeditor5-internallink-plugin/master/README_Autocomplete.png)
+![alt text](https://raw.githubusercontent.com/tommc1985/ckeditor5-internallink-plugin/master/README_Autocomplete.png)
 
 The HTML-Tags of this plugin are looking as following:
 
@@ -15,7 +15,7 @@ The HTML-Tags of this plugin are looking as following:
 <internallink internallinkid="123">some text</internallink>
 ```
 
-![alt text](https://raw.githubusercontent.com/SamhammerAG/ckeditor5-internallink-plugin/master/README_Preview.png)
+![alt text](https://raw.githubusercontent.com/tommc1985/ckeditor5-internallink-plugin/master/README_Preview.png)
   
 ## Features
 
@@ -41,7 +41,7 @@ yarn add @samhammer/ckeditor5-internallink-plugin
 npm i @samhammer/ckeditor5-internallink-plugin
 ```
 
-e.g.: https://github.com/SamhammerAG/ssp-ckeditor5-build-inline
+e.g.: https://github.com/tommc1985/ssp-ckeditor5-build-inline
 
 Note: We prefer yarn so it is only testet with this build tool.
 
