@@ -237,7 +237,7 @@ export default class InternalLinkFormView extends View {
                 || event.key == 'ArrowRight'
                 || event.key == 'Enter'
                 || event.key == 'Escape'
-				|| event.key == 'Tab'
+                || event.key == 'Tab'
             ) {
                 return;
             }

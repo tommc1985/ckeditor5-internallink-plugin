@@ -22,12 +22,13 @@ export function isLinkElement(node) {
  * @param {String} internalLinkId
  * @returns {module:engine/view/attributeelement~AttributeElement}
  */
-export function createLinkElement(internalLinkId, writer) {
+export function createLinkElement(internalLinkId, view) {
     // Priority 5 - https://github.com/ckeditor/ckeditor5-link/issues/121.
-    const linkElement = writer.createAttributeElement(VIEW_INTERNAL_LINK_TAG,
+    
+    const linkElement = view.writer.createAttributeElement(VIEW_INTERNAL_LINK_TAG,
         { [ VIEW_INTERNAL_LINK_ID_ATTRIBUTE ]: internalLinkId },
         { priority: 5 });
-    writer.setCustomProperty(linkElementSymbol, true, linkElement);
+    view.writer.setCustomProperty(linkElementSymbol, true, linkElement);
 
     return linkElement;
 }

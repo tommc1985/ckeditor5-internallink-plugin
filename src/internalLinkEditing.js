@@ -78,7 +78,7 @@ export default class InternalLinkEditing extends Plugin {
         twoStepCaretMovementPlugin.registerAttribute( MODEL_INTERNAL_LINK_ID_ATTRIBUTE );
 
         // Setup highlight over selected link.
-        this.setupLinkHighlight();
+        //this.setupLinkHighlight();
     }
 
     /**
@@ -105,7 +105,7 @@ export default class InternalLinkEditing extends Plugin {
             const selection = editor.model.document.selection;
 
             if (selection.hasAttribute(MODEL_INTERNAL_LINK_ID_ATTRIBUTE)) {
-                const modelRange = findLinkRange(selection.getFirstPosition(), selection.getAttribute(MODEL_INTERNAL_LINK_ID_ATTRIBUTE));
+                const modelRange = findLinkRange(selection.getFirstPosition(), selection.getAttribute(MODEL_INTERNAL_LINK_ID_ATTRIBUTE), model);
                 const viewRange = editor.editing.mapper.toViewRange(modelRange);
 
                 // There might be multiple `a` elements in the `viewRange`, for example, when the `a` element is

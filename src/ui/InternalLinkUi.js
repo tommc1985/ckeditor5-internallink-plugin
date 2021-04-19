@@ -334,24 +334,24 @@ export default class InternalLinkUi extends Plugin {
     }
 
     /**
-	 * Returns true when {@link #actionsView} or {@link #formView} is in the {@link #balloon} and it is
-	 * currently visible.
-	 *
-	 * @readonly
-	 * @protected
-	 * @type {Boolean}
-	 */
+     * Returns true when {@link #actionsView} or {@link #formView} is in the {@link #balloon} and it is
+     * currently visible.
+     *
+     * @readonly
+     * @protected
+     * @type {Boolean}
+     */
     get isUIVisible() {
         return this.balloon.visibleView == this.formView || this.areActionsVisible;
     }
 
     /**
-	 * Returns true when {@link #actionsView} or {@link #formView} is in the {@link #balloon}.
-	 *
-	 * @readonly
-	 * @protected
-	 * @type {Boolean}
-	 */
+     * Returns true when {@link #actionsView} or {@link #formView} is in the {@link #balloon}.
+     *
+     * @readonly
+     * @protected
+     * @type {Boolean}
+     */
     get isBalloonInitialized() {
         return this.isBalloonInitializedWithForm || this.isBalloonInitializedWithActions;
     }
@@ -504,6 +504,7 @@ export default class InternalLinkUi extends Plugin {
      * @returns {module:engine/view/attributeelement~AttributeElement|null}
      */
     getSelectedLinkElement() {
+        const view = this.editor.editing.view;
         const selection = this.editor.editing.view.document.selection;
 
         if (selection.isCollapsed) {
@@ -520,7 +521,7 @@ export default class InternalLinkUi extends Plugin {
             }
 
             // Check if the link element is fully selected.
-            if (Range.createIn(startLink).getTrimmed().isEqual(range)) {
+            if ( view.createRangeIn( startLink ).getTrimmed().isEqual( range ) ) {
                 return startLink;
             } else {
                 return null;

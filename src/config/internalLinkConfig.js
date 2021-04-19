@@ -21,17 +21,17 @@ export default class InternalLinkConfig extends Plugin {
     /**
      * The configuration used by the internal link features in the `@samhammer/ckeditor5-internalLink` package.
      *
-     *		InlineEditor
-     *			.create( editorElement, {
-     * 				internallink: {
+     *      InlineEditor
+     *          .create( editorElement, {
+     *              internallink: {
      *                  testmode: false,
      *                  autocompleteurl: '',
      *                  titleurl: '',
      *                  previewurl: ''
      *              }
-     *			} )
-     *			.then( ... )
-     *			.catch( ... );
+     *          } )
+     *          .then( ... )
+     *          .catch( ... );
      *
      * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
      *
